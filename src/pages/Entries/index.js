@@ -3,7 +3,7 @@ import { StatusBar, StyleSheet, View, Text, Button, TouchableOpacity } from 'rea
 import CurrencyInput from 'react-native-currency-input';
 import { RFPercentage } from 'react-native-responsive-fontsize';
 import SelectDropDown from 'react-native-select-dropdown';
-import {Feather} from '@expo/vector-icons';
+import { Feather } from '@expo/vector-icons';
 
 import Header from '../../components/Header';
 
@@ -56,15 +56,31 @@ export default Entries = ({ navigation }) => {
                             placeholder='R$ 0,00'
                         />
 
+
+                        {
+                            (valueLancamento == '0' || valueLancamento == "" || valueLancamento === null) ?
+                                (<Text style={styles.textErrorValue}>Digite um valor</Text>) :
+                                ""
+                        }
+
+
+
                     </View>
 
                 </View>
 
 
-                <TouchableOpacity style={styles.contentButtonNext}>
-                    <Feather name='chevron-right' color='#fff' size={34} />
-                    {/* <Text style={styles.buttonNext} >Avançar</Text> */}
-                </TouchableOpacity>
+
+                {
+                    (valueLancamento == '0' || valueLancamento == "" || valueLancamento === null) ?
+                        "" :
+                        (<TouchableOpacity style={styles.contentButtonNext} onPress={() => alert('Avançar Etapa')}>
+                            <Feather name='chevron-right' color='#fff' size={34} />
+                            {/* <Text style={styles.buttonNext} >Avançar</Text> */}
+                        </TouchableOpacity>)
+                }
+
+
             </View>
         </View>
     )
@@ -138,6 +154,12 @@ const styles = StyleSheet.create({
         fontSize: RFPercentage(2.8),
         fontWeight: 'bold',
         color: '#a2a2a2'
+    },
+
+    textErrorValue: {
+        paddingTop: 10,
+        fontSize: RFPercentage(1.4),
+        color: 'red'
     },
 
     insiderLancamento: {
