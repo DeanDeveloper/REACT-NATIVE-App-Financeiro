@@ -62,7 +62,7 @@ export default Entries = ({ navigation }) => {
 
 
                 <TouchableOpacity style={styles.contentButtonNext}>
-                    <Feather name='chevron-right' color='#888' size={34} />
+                    <Feather name='chevron-right' color='#fff' size={34} />
                     {/* <Text style={styles.buttonNext} >Avançar</Text> */}
                 </TouchableOpacity>
             </View>
