@@ -1,10 +1,18 @@
 {
   "expo": {
     "name": "app_financeiro",
+    "description": "App Finance",
     "slug": "app_financeiro",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.mycompany.appFinance"
+    }
   }
 }
