@@ -1,12 +1,18 @@
 {
   "expo": {
-    "name": "app_financeiro",
+    "name": "Financentral",
     "description": "App Finance",
-    "slug": "app_financeiro",
-    "version": "1.0.0",
+    "slug": "Financentral",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "platforms" : [
+      "ios",
+      "android"
+    ],
     "assetBundlePatterns": [
       "**/*"
     ],
+
 
     "ios": {
       "supportsTablet": true
