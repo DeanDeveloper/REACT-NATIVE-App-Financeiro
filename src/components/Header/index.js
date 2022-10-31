@@ -4,6 +4,7 @@ import { StyleSheet, View, Text, StatusBar, TouchableOpacity, Modal } from "reac
 import { Feather } from '@expo/vector-icons';
 import Profile from "../Body/Modal/Profile";
 import {Context} from '../../contexts/Provider';
+import { RFPercentage } from "react-native-responsive-fontsize";
 
 const statusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight - (60) : 66;
 
@@ -61,7 +62,7 @@ const styles = StyleSheet.create({
     },
 
     username: {
-        fontSize: 22,
+        fontSize: RFPercentage(2.2),
         color: '#fff',
         fontWeight: 'bold',
         // width: esquerda
