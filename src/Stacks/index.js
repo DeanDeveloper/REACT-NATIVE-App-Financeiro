@@ -21,7 +21,7 @@ export default StackRoutes = () => {
     return (
         <Provider>
 
-            <Navigator initialRouteName='Entries'
+            <Navigator initialRouteName='Home'
                 screenOptions={{
                     headerShown: false,
                     tabBarInactiveTintColor: '#8000ff',

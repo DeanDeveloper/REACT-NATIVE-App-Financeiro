@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
+import { RFPercentage } from 'react-native-responsive-fontsize';
 
 export default Balance = ({ saldo, expenses }) => {
 
@@ -57,7 +58,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     title: {
-        fontSize: 18,
+        fontSize: RFPercentage(1.5),
         color: '#b6b6b6'
     },
 
@@ -73,13 +74,13 @@ const styles = StyleSheet.create({
 
     saldo: {
         color: '#2ecc71',
-        fontSize: 24,
+        fontSize: RFPercentage(2.4),
         fontWeight: 'bold',
     },
 
     expenses: {
         color: '#e74c3c',
-        fontSize: 24,
+        fontSize: RFPercentage(2.4),
         fontWeight: 'bold',
     },
 

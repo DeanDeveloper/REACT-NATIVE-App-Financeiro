@@ -10,7 +10,7 @@ export default Settings = ({ navigation }) => {
       <StatusBar backgroundColor='#8000ff' barStyle="light-content" />
       <Header/>
       <View style={styles.configPanel}>
-        <Text>Configurações</Text>
+        <Text>Configurações do Sistema</Text>
       </View>
 
       {/* <Footer navigation={navigation}  /> */}
