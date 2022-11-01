@@ -30,30 +30,43 @@ export default Profile = ({ closeModalProfile }) => {
 
                 </View>
 
+
+                <TouchableOpacity style={styles.spaceCloseModal} onPress={closeModalProfile} ></TouchableOpacity>
+
         </SafeAreaView>
     )
 }
 
 const styles = StyleSheet.create({
+
     container: {
         flex: 1,
-        // width: '100%',
+        width: '100%',
         borderRadius: 6,
         alignItems: 'center',
-        backgroundColor: 'rgba(0,0,0,0.75)',
-        margin: 6
     },
+ 
 
     containerList: {
-        flex: 1,
-        flexDirection:'row',
+        flex: .4,
+        // width: '90%',
+        borderBottomEndRadius: 6,
+        borderBottomStartRadius: 6,
+        backgroundColor: 'rgba(0,0,0,0.75)',
+        flexDirection: 'row',
         flexWrap: 'wrap',
-        marginVertical: 20,
+        marginHorizontal: 6,
+        paddingTop: 20,
         paddingStart: 20,
         paddingEnd: 20,
         // marginTop: 90
     },
 
+    spaceCloseModal: {
+        flex: .6,
+        width: '100%',
+        backgroundColor: 'transparent'
+    }, 
     containerSubList: {
         width: 100,
         height: 100,

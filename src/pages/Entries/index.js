@@ -7,7 +7,7 @@ import { Feather } from '@expo/vector-icons';
 
 import Header from '../../components/Header';
 
-export default Entries = ({ navigation }) => {
+export default Entries = () => {
     const [showValue, setShowValue] = useState(false);
 
     const [valueLancamento, setValueLancamento] = useState(0);
