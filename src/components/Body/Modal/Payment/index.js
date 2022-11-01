@@ -20,7 +20,6 @@ export default ModalPayment = ({ action, setModal, valueExpenses, cardName, expi
         effectAnimateRef.current.pulse(600)
     }
 
-
     return (
         <View>
             <Modal

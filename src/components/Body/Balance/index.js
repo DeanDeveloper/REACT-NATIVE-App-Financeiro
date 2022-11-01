@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     },
 
     symbol: {
-        fontSize: 24,
+        fontSize: RFPercentage(2.4),
         marginRight: 5,
         color: '#b6b6b6'
     },

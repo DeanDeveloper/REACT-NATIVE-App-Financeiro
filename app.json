@@ -5,8 +5,10 @@
     "slug": "Financentral",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon":"./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
+      "resizeMode":"contain",
       "backgroundColor": "#8800ff"
     },
     "updates": {
@@ -25,7 +27,11 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.mycompany.appFinance"
+      "package": "com.mycompany.appFinance",
+      "adaptiveIcon": {
+        "backgroundColor":"#8800ff",
+        "foregroundImage":"./assets/icon.png"
+      }
     }
   }
 }
